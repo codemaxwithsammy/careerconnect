@@ -1,0 +1,134 @@
+h1{
+      color:blue;
+      font-size: 40px;
+      text-align: center;
+    }
+    body{
+      font-family: Arial,sans-serif;
+      background-color: #f4f4f4;
+      margin:0;
+    }
+    nav{
+      background-color: #333;
+      padding:15px;
+    }
+    nav a{
+      color:white;
+      margin-right: 20px;
+      text-decoration:none ;
+
+    }
+    header{
+      text-align: center;
+      padding: 40px 20px;
+    }
+    form{
+      max-width:400px;
+      margin:30px auto;
+      background-color: white;
+      padding:20px;
+      border-radius: 8px;
+
+    }
+    input{
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    ul {
+     list-style: none;
+     padding: 0;
+    }
+    li {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+    li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .companies-list {
+       display: flex;
+       gap: 15px;
+       padding: 0;
+    }
+    .companies-list li {
+       background-color: #e0e0e0;
+       padding: 8px 16px;
+       border-radius: 20px;
+       font-weight: bold;
+       color: #333;
+    }
+    .job-details{
+        max-width: 700px;
+        margin:30px auto;
+        background-color: white;
+        padding:30px;
+        border-radius: 8px;
+    }
+    .job-details h1{
+        color:#333;
+        text-align: left;
+        font-size: 28px;
+    }
+    .job-details h2{
+        color:#555;
+        font-weight: normal;
+
+    }
+    .job-details h3{
+        margin-top:20px;
+        color:#007BFF;
+    }
+    .job-details ul {
+       padding-left: 20px;
+       list-style: disc;
+    }
+    .job-details li {
+       background-color: transparent;
+       border: none;
+       padding: 4px 0;
+       margin-bottom: 0;
+    }
+    .job-details button {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .about-content {
+   max-width: 700px;
+   margin: 30px auto;
+   background-color: white;
+   padding: 30px;
+   border-radius: 8px;
+  }
+
+.about-content h1 {
+  text-align: left;
+  color: #333;
+}
+
+.about-content p {
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+
+
