@@ -129,6 +129,21 @@ h1{
   color: #555;
   margin-bottom: 15px;
 }
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+  nav a{
+    display: block;
+    margin-bottom: 10px;
+  }
+  .companies-list{
+    flex-wrap: wrap;
+  }
+  form{
+    margin:20px 15px;
+  }
+}
 
 
 
