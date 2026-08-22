@@ -144,6 +144,21 @@ h1{
     margin:20px 15px;
   }
 }
+.error-message {
+  color:red;
+  display:block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+
+}
+.success-message{
+  color: green;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
 
 
 

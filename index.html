@@ -32,6 +32,8 @@
     <form>
       <label for="fullname">Full Name</label>
       <input type="text" id="fullname" name="fullname">
+      <span id="nameError" class="error-message"></span>
+      <span id="nameSuccess" class="success-message"></span>
       
       <label for="email">E-mail</label>
       <input type="email" id="email" name="email">
@@ -48,5 +50,30 @@
   <footer>
     <p>&copy; 2026 CareerConnect. All rights reserved.</p>
   </footer>
+  <script>
+      
+    let nameInput= document.getElementById("fullname");
+    console.log(nameInput.value);
+    let applyButton=document.querySelector("button");
+    applyButton.addEventListener("click",function(event){
+      event.preventDefault();
+      if(nameInput.value===""){
+        console.log("please enter your name.")
+      }else{
+        console.log("Name looks good!")
+      }
+      
+    
+      let errorMessage=document.getElementById("nameError");
+      let successMessage=document.getElementById("nameSuccess")
+      if(nameInput.value===""){
+        errorMessage.textContent= "please enter your full name";
+        successMessage.textContent="";
+      }else{
+        errorMessage.textContent="";
+        successMessage.textContent="Name looks good"
+      }
+    });
+  </script>
 </body>
 </html>
