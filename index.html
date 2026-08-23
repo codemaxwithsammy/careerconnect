@@ -32,14 +32,18 @@
     <form>
       <label for="fullname">Full Name</label>
       <input type="text" id="fullname" name="fullname">
-      <span id="nameError" class="error-message"></span>
-      <span id="nameSuccess" class="success-message"></span>
+      <span id="nameError" class="Name-error-message"></span>
+      <span id="nameSuccess" class="Name-success-message"></span>
       
       <label for="email">E-mail</label>
       <input type="email" id="email" name="email">
+      <span id="emailError" class="email-error-message"></span>
+      <span id="emailSuccess" class="email-success-message"></span>
       
       <label for="phone">Phone Number</label>
       <input type="tel" id="phone" name="phone">
+      <span id="phoneError" class="phone-error-message"></span>
+      <span id="phoneSuccess" class="phone-success-message"></span>
       
       <label for="resume">Choose File</label>
       <input type="file" id="resume" name="resume">
@@ -53,25 +57,44 @@
   <script>
       
     let nameInput= document.getElementById("fullname");
-    console.log(nameInput.value);
+    let phoneInput=document.getElementById("phone");
+    let emailInput=document.getElementById("email");
     let applyButton=document.querySelector("button");
+    let nameErrorMessage=document.getElementById("nameError");
+    let nameSuccessMessage=document.getElementById("nameSuccess");
+    let emailErrorMessage=document.getElementById("emailError");
+    let emailSuccessMessage=document.getElementById("emailSuccess");
+    let phoneErrorMessage=document.getElementById("phoneError");
+    let phoneSuccessMessage=document.getElementById("phoneSuccess");
+    let phonePattern=/^[0-9]{10}$/;
+    let emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/
     applyButton.addEventListener("click",function(event){
       event.preventDefault();
-      if(nameInput.value===""){
-        console.log("please enter your name.")
-      }else{
-        console.log("Name looks good!")
-      }
+      
       
     
-      let errorMessage=document.getElementById("nameError");
-      let successMessage=document.getElementById("nameSuccess")
+      
       if(nameInput.value===""){
-        errorMessage.textContent= "please enter your full name";
-        successMessage.textContent="";
+        nameErrorMessage.textContent= "please enter your full name";
+        nameSuccessMessage.textContent="";
       }else{
-        errorMessage.textContent="";
-        successMessage.textContent="Name looks good"
+        nameErrorMessage.textContent="";
+        nameSuccessMessage.textContent="Name looks good"
+      }
+      if(!emailPattern.test(emailInput.value)){
+        emailErrorMessage.textContent="Enter valid email";
+        emailSuccessMessage.textContent="";
+      }else{
+        emailErrorMessage.textContent="";
+        emailSuccessMessage.textContent="Awesome go ahead";
+      }
+      
+      if(phonePattern.test(phoneInput.value)){
+        phoneSuccessMessage.textContent="Awesome go ahead";
+        phoneErrorMessage.textContent="";
+      }else{
+        phoneErrorMessage.textContent="Please enter your correct phone number";
+        phoneSuccessMessage.textContent="";
       }
     });
   </script>

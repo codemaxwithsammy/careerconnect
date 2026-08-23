@@ -144,7 +144,7 @@ h1{
     margin:20px 15px;
   }
 }
-.error-message {
+.Name-error-message {
   color:red;
   display:block;
   margin-top: 5px;
@@ -152,13 +152,46 @@ h1{
   font-size: 14px;
 
 }
-.success-message{
+.Name-success-message{
   color: green;
   display: block;
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 14px;
 }
+.email-error-message {
+  color:red;
+  display:block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+
+}
+.email-success-message {
+  color:green;
+  display:block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+
+}
+.phone-error-message{
+  color:red;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.phone-success-message{
+  color: green;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+
+
 
 
 
