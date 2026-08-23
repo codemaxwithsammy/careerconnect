@@ -35,7 +35,21 @@
 
   <a href="/apply-form.html">
     <button type="button">Apply Now</button>
+    
   </a>
+  <button id="savebutton">Save job</button>
 </main>
+<script>
+  let saveButton=document.getElementById("savebutton");
+  let isSave=false;
+  saveButton.addEventListener("click",function(){
+    isSave=!isSave;
+    if(isSave){
+      saveButton.textContent="Saved";
+    }else{
+      saveButton.textContent="Save job"
+    }
+  });
+</script>
 </body>
 </html>

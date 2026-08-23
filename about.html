@@ -29,14 +29,25 @@
   a smooth application process — so you can spend less time scrolling and
   more time landing the role you actually want.
 </p>
+<button id="toggleContact">Contact Us</button>
+<div id="contactInfo" style="display: none;"><p>Email: support@carrerconnect.com</p>
+  <p>Phone: +91-9876543210</p></div>
     </main>
     <footer>
       <p>&copy; 2026 CareerConnect. All rights reserved.</p>
     </footer>
     <script>
-      let jobTitle="Software Engineer";
-      console.log(jobTitle);
+      let toggleButton=document.getElementById("toggleContact");
+      let contactInfo=document.getElementById("contactInfo");
+      toggleButton.addEventListener("click",function(){
+        if(contactInfo.style.display==="none"){
+          contactInfo.style.display="block";
+        }else{
+          contactInfo.style.display="none";
+        }
+      })
     </script>
+      
 </body>
 
 </html>
